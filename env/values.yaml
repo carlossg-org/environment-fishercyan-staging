@@ -6,13 +6,6 @@ expose:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
 
-cleanup:
-  Args: 
-    - --cleanup
-  Annotations:
-    helm.sh/hook: pre-delete
-    helm.sh/hook-delete-policy: hook-succeeded
-exposecontroller:
   config:
     domain: us.g.csanchez.beescloud.com
     exposer: Ingress
@@ -22,6 +15,14 @@ exposecontroller:
   annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
+
+cleanup:
+  Args: 
+    - --cleanup
+  Annotations:
+    helm.sh/hook: pre-delete
+    helm.sh/hook-delete-policy: hook-succeeded
+
 jenkins:
   servers:
     gitea: []
