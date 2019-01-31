@@ -1,0 +1,9 @@
+dependencies:
+- name: exposecontroller
+  repository: http://chartmuseum.jenkins-x.io
+  version: 2.3.89
+- name: exposecontroller
+  repository: http://chartmuseum.jenkins-x.io
+  version: 2.3.89
+digest: sha256:4b7e0eec407c749b283b81cdb1ed612e409d0ed5c9a79c6c4e46616c44169f17
+generated: 2019-01-23T11:59:04.968309Z
