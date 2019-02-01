@@ -1,0 +1,14 @@
+Step: build-step-credential-initializer:
+
+{"level":"warn","ts":1549036037.2224088,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1549036037.2249072,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-0:
+
+{"level":"warn","ts":1549036038.7921016,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1549036039.1875892,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/carlossg-org/environment-fishercyan-staging.git\" @ \"879e4b469dbbdcfdbdd0d81d8200839bec55c8a1\" in path \"/workspace\""}
+Step: build-step-build:
+
+Adding missing Helm repo: jenkins-x http://chartmuseum.jenkins-x.io
+Successfully added Helm repository jenkins-x.
+Adding missing Helm repo: releases http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository releases.
